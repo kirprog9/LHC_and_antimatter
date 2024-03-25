@@ -1,0 +1,112 @@
+@media screen and (min-width: 800px) {
+ 
+  html {
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ 
+ header {text-align: center;
+  background-color: rgb(252, 187, 11);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  top: 0;
+  }
+  .home{text-align:center; }
+  .sidenav {height: 100%;
+    width: 25%;
+    font-size: 3.5vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #313030e8;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: aliceblue;  
+    text-align:left; 
+    line-height: 3.5vh;
+}
+
+.gifs {height: 100%;
+  width: 17%;
+  font-size: 22px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 83%;
+  background-color: #313030e8;
+  overflow-x: hidden;
+  color: aliceblue;  
+  text-align:left; 
+  line-height: 22px;
+
+}
+.gifs img,
+iframe{
+  width:100%;
+   height:20%;
+}
+
+.gifs img{margin: 0px;}
+
+img{display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{text-decoration: none; }
+.sidenav a{color: aliceblue;}
+
+.sidenav h1, 
+.sidenav h2, 
+.sidenav ol, 
+.sidenav p{ margin: 10px;}
+
+
+a:visited {color: aliceblue;  }
+a:hover {color: orange;}
+a:focus {color: orange;}
+
+.urls a{color: black;}
+
+.urls a:visited {color: black;}
+.urls a:hover {color: orange;}
+.urls a:focus {color: orange;}
+
+body{
+    text-align:left;   
+    font-size: 1.25vw;
+    background-color:ghostwhite ;   
+    margin-left: 26%;
+    margin-right: 17%;
+    margin-top: 0;
+    height: 100%;
+    margin-bottom: 0;
+}
+main{
+  width: 80%;
+  padding: 5vw;
+  padding-top: 0px;
+
+}
+table,th,td {
+    border: 1px solid grey;
+    text-align:center;    
+  } 
+  table{
+    margin-left: auto;
+    margin-right: auto;}
+  
+  th,td {
+     padding:1px;
+  }
+
+}
