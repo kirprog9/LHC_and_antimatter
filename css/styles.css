@@ -1,112 +1,230 @@
-@media screen and (min-width: 800px) {
- 
-  html {
-    background-image: url(../images/back.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
- 
- header {text-align: center;
-  background-color: rgb(252, 187, 11);
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 50px;
+
+#side-checkbox {
+  display: none;
+}
+.side-panel {
+  position: fixed;
+  z-index: 3;
   top: 0;
-  }
-  .home{text-align:center; }
-  .sidenav {height: 100%;
-    width: 25%;
-    font-size: 3.5vh;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #313030e8;
-    overflow-x: hidden;
-    padding-top: 20px;
-    padding-left: 20px;
-    color: aliceblue;  
-    text-align:left; 
-    line-height: 3.5vh;
+  left: -360px;
+  background: #337AB7;
+  transition: all 0.5s;  
+  width: 320px;
+  height: 100vh;
+  box-shadow: 10px 0 20px rgba(0,0,0,0.4);
+  color: #FFF;
+  padding: 40px 20px;
+ 
+}
+.side-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #BFE2FF;
+}
+/* Оформление кнопки на странице */
+
+
+/* Переключатели кнопки 1 */
+
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+  display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+  display: block;
+}
+#side-checkbox:checked + .side-panel {
+  left: 0;
+}
+/* Оформление кнопки на панеле */
+.side-button-2 {
+  font-size: 30px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  transform: rotate(45deg);
+  color: #BFE2FF;   
+  transition: all 280ms ease-in-out;   
+}
+.side-button-2:hover {
+  transform: rotate(45deg) scale(1.1);   
+  color: #FFF;
 }
 
-.gifs {height: 100%;
-  width: 17%;
-  font-size: 22px;
+html {
+  background-image: url(../images/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table,th,td {
+  border: 1px solid grey;
+  text-align:center;    
+} 
+table{
+  margin-left: auto;
+  margin-right: auto;}
+
+th,td {
+  padding:1px;
+}
+header {text-align: center;
+  background: #337AB7;
+  width: 100%;
+  padding-left: 12px;
+  margin-bottom: 10px;
+  top: 0;
+  }
+  
+ 
+  a{text-decoration: none; }
+  .sidenav a{color: aliceblue;}
+  .side-panel a{color: aliceblue;}
+
+
+  .sidenav h1, 
+  .sidenav h2, 
+  .sidenav ol, 
+  .sidenav p{ margin: 10px;}
+  
+  
+  a:visited {color: aliceblue;  }
+  a:hover {color: orange;}
+  a:focus {color: orange;}
+  
+  .urls a{color: black;}
+  
+  .urls a:visited {color: black;}
+  .urls a:hover {color: orange;}
+  .urls a:focus {color: orange;}
+
+.logo{
+position: fixed;
+}
+
+
+@media screen and (min-width: 1280px) {
+
+.logo{
+  display: none;
+}
+.side-button-2 {
+  display: none;
+}
+
+.home{text-align:center; }
+.side-panel {height: 100%;
+  width: 23%;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 83%;
+  left: 0;
   background-color: #313030e8;
   overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
   color: aliceblue;  
   text-align:left; 
-  line-height: 22px;
+  font-size: 20px;
+}
+
+.gifs {height: 100%;
+width: 17%;
+font-size: 22px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 83%;
+background-color: #313030e8;
+overflow-x: hidden;
+color: aliceblue;  
+text-align:left; 
+line-height: 22px;
 
 }
 .gifs img,
 iframe{
-  width:100%;
-   height:20%;
+width:100%;
+ height:20%;
 }
 
 .gifs img{margin: 0px;}
 
 img{display: block;
-  margin-left: auto;
-  margin-right: auto;
+margin-left: auto;
+margin-right: auto;
 }
-a{text-decoration: none; }
-.sidenav a{color: aliceblue;}
-
-.sidenav h1, 
-.sidenav h2, 
-.sidenav ol, 
-.sidenav p{ margin: 10px;}
-
-
-a:visited {color: aliceblue;  }
-a:hover {color: orange;}
-a:focus {color: orange;}
-
-.urls a{color: black;}
-
-.urls a:visited {color: black;}
-.urls a:hover {color: orange;}
-.urls a:focus {color: orange;}
 
 body{
-    text-align:left;   
-    font-size: 1.25vw;
-    background-color:ghostwhite ;   
-    margin-left: 26%;
-    margin-right: 17%;
-    margin-top: 0;
-    height: 100%;
-    margin-bottom: 0;
+  text-align:left;   
+  font-size: 1.25vw;
+  background-color:ghostwhite ;   
+  margin-left: 26%;
+  margin-right: 17%;
+  margin-top: 0;
+  height: 100%;
+  margin-bottom: 0;
 }
 main{
-  width: 80%;
-  padding: 5vw;
-  padding-top: 0px;
+width: 80%;
+padding: 5vw;
+padding-top: 0px;
 
 }
-table,th,td {
-    border: 1px solid grey;
-    text-align:center;    
-  } 
-  table{
-    margin-left: auto;
-    margin-right: auto;}
-  
-  th,td {
-     padding:1px;
-  }
 
+
+
+}
+@media screen and (max-width: 1279px){
+.sidenav {height: 100%;
+  width: 25%;
+  font-size: 3.5vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #313030e8;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: aliceblue;  
+  text-align:left; 
+  line-height: 3.5vh;
+}
+body{
+  text-align:left;   
+  background-color:ghostwhite ;   
+  margin-top: 0;
+  height: 100%;
+  margin-bottom: 0;
+}
+main{
+width: 100%;
+padding-top: 0px;
+
+}
+.gifs img,
+iframe{
+width:100%;
+ height:20%;
+}
+
+table{
+width: 100%;
+}
+.section_main{
+width:95%;
+margin-left: 10px;
+}
+.notinbigd{
+display: none;
+}
 }

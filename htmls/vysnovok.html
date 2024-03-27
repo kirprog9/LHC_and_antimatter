@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,11 @@
 </head>
 
 <body >
-    <div class="sidenav">
-        <div class = "home">
-            <p><a href="../index.html">Home</a></p> 
-        </div>
-        <p><a href="./about.html">About the website</a></p> 
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+        <label class="side-button-2" for="side-checkbox">+</label>   
+        
+        <div class="side-title"> <p><a href="./about.html">About the website</a></p><p><a href="../index.html">Home</a></p> </div>
            
         <p><a href="./vstup.html#s1">Why LHC?</a></p>
                 <ol>
@@ -41,17 +41,16 @@
               
            
         </div>   
-        <div class="gifs">
-            <iframe src="https://gifer.com/embed/6Kl" width=245 height=137 ></iframe>
-            <img  src="https://i0.wp.com/www.freethink.com/wp-content/uploads/2022/04/lhc-thumb-2.gif?resize=768,453" width="245" height="137">
-            <img  src="https://a-kapoor.github.io/images/7h0N.gif" width="245" height="137">
-            <img  src="https://cds.cern.ch/record/1629878/files/CMS%20event%20display%20demo_image.gif?subformat=" width="245" height="137"> 
-            <iframe width="245" height="137" src="https://www.youtube.com/embed/RDdPuL-uOQc?si=24DjRt4sJA5PTMaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="side-button-1-wr">
+            <label class="side-button-1" for="side-checkbox">         
+                <img class="logo" src="../images/1.png" width="30px" height="30px">
+            </label>
         </div>
+
     <header>
         <h2 id ="s16">LARGE HADRON COLLIDER AND ANTIMATTER</h2> 
     </header> 
-<main>
+<main class = "section_main">
     
     <section>
         <h2 >Conclusion</h2>
@@ -83,5 +82,12 @@
     </section>
 
 </main>
+<div class="gifs notinbigd">
+    <iframe src="https://gifer.com/embed/6Kl" width="245" height=20% ></iframe>
+    <img  src="https://i0.wp.com/www.freethink.com/wp-content/uploads/2022/04/lhc-thumb-2.gif?resize=768,453" width="245" height=20%>
+    <img  src="https://a-kapoor.github.io/images/7h0N.gif" width="245" height=20%>
+    <img  src="https://cds.cern.ch/record/1629878/files/CMS%20event%20display%20demo_image.gif?subformat=" width="245" height=20%> 
+    <iframe width="245" height=20% src="https://www.youtube.com/embed/RDdPuL-uOQc?si=24DjRt4sJA5PTMaj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 </body>
 </html>
